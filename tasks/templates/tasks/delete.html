@@ -1,0 +1,13 @@
+<header>Delete Task</header>
+<br>
+<body>
+    Are you sure you want to delete {{task.title}}?
+    <br><br>
+    <a href='{% url 'home' %}'>Cancel</a>
+    <br><br>
+    
+    <form method='POST' action=''>
+        {% csrf_token %}
+        <input type='submit' name='Confirm'>
+    </form>
+</body>

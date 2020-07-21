@@ -1,0 +1,9 @@
+<header>Edit Task</header>
+<body>
+
+    <form method='POST' action=''>
+        {% csrf_token %}
+        {{form}}
+        <input type='submit' name='Edit Task'>
+    </form>
+</body>
